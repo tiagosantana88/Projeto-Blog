@@ -12,14 +12,10 @@
   <body>
     <!-- header-->
     <header>
+      
       <nav  class="container-navbar">
         <a href="index.html"><img src="/icone/icone-nome.png" alt="imagem logo" /> </a>
-        <!-- menu mobile-->
-            <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
+        
             <!-- fim do menu mobile-->
         <ul class="navbar">
           <a href="index.html"><li>Home</li></a>
@@ -28,10 +24,17 @@
           <a href=""><li>Contato</li></a>
         </ul>
       </nav>
-
+      <!-- menu mobile-->
+            <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+    </header>
       <!-- banner -->
-      <div class="banner">
-        <div class="banner-container">
+      <section>
+        <div class="banner">
+          <div class="banner-container">
           <h1 class="banner-title">Bem-vindo</h1>
           <p>Fique por dentro das noticias do <strong>Universo Dev</strong></p>
           <form>
@@ -42,8 +45,8 @@
           </form>
         </div>
       </div>
-    </header>
-
+    </section>
+    
 <!--section titulo -->
     <section class = "news-tecnologia" id="noticias">
       <div class="news-container">
@@ -56,9 +59,11 @@
         <div class="tech-content">
           <div class="tech-item">
             <div class="tech-img">
-              <img src="/images/tecnologia/noticia01.png" alt = "noticia 01" title="Google lança no Brasil plataforma que ensina programação " />
+              <a href="noticia-01.html#noticia01" target="_self">
+              <img src="/images/tecnologia/noticia01.png" alt ="noticia 01" title="Google lança no Brasil plataforma que ensina programação " />
               <span>15/10/2021</span>
               <span>Noticias/Tech</span>
+              </a>
             </div>
             <div class="tech-title">
               <a href="noticia-01.html#noticia01" target="_self">Grasshopper: Google lança no Brasil plataforma que ensina programação de graça</a>
@@ -67,7 +72,7 @@
 
           <div class = "tech-item">
             <div class = "tech-img">
-              <img src = "/images/tecnologia/noticia02.jpg" alt = "noticia 02" />
+              <img src = "/images/tecnologia/noticia02.jpg" alt ="noticia 02" />
               <span>15/10/2021</span>
               <span>Noticas/Tech</span>
             </div>

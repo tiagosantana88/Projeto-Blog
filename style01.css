@@ -11,11 +11,10 @@ html {
 body{
     font-family: 'Ubuntu', sans-serif; 
     color: #3c393d;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-background.jpg) center/cover no-repeat fixed;
 }
 /* header */
 header{
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-background.jpg) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -67,6 +66,7 @@ header{
 
 /* banner */
 .banner{
+    min-height: 100vh;
     flex: 1;
     display: flex;
     align-items: center;
@@ -127,6 +127,9 @@ strong::after {
     cursor: pointer;
 }
 /* estilo noticias */
+main {
+    background: #fff;
+}
 .container-news01 {
     display: flex;
     justify-content: center;
