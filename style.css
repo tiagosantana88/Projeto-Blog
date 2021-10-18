@@ -130,10 +130,7 @@ strong::after {
     cursor: pointer;
 }
 
-
 /* section noticias */
-
-
 .tech-img {
     display: flex;
     flex-direction: column;
@@ -144,7 +141,7 @@ strong::after {
 }
 .news-tecnologia{
     background: #fff;
-    padding: 2rem;
+    padding: 2.5rem;
 } 
 .title {
     text-align: center;
