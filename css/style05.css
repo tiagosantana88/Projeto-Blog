@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif; 
+    color: #3c393d;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner-background.jpg) center/cover no-repeat fixed;
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+/* menu responsivo */
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/*menu */
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.container-navbar img {
+    width: 40%;
+    margin: 0.7rem;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.4rem;
+    letter-spacing: 2px;
+}
+.navbar a {
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+}
+.navbar a:hover {
+    opacity: 0.3;
+    transition: .3s ease;
+}
+
+/* banner */
+.banner{
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.banner-title{
+    font-size: 7rem;
+    font-family: 'Ubuntu', sans-serif; 
+    line-height: 1.2;
+}
+.effect-title strong::before {
+    content:'< ';
+    font-size: 3rem;
+    color:#f5f5f5;
+}
+.effect-title strong::after {
+    content:' >';
+    font-size: 3rem;
+    color:#f5f5f5;
+}
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner strong {
+    color:rgb(246, 250, 0);
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: #3c393d;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+/* estilo noticias */
+main {
+    background: #fff;
+}
+.container-news05 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.main-title {
+ font-size: 4rem;
+ line-height: 60px;
+ padding: 2rem;   
+}
+h2 {
+    font-size: 1.2rem;
+    padding: 2rem;   
+}
+.news05 { 
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.news05 p:first-of-type {
+    font-size: 1.3rem;
+    padding: 1.1rem 2rem;
+    border-bottom: 1px solid rgb(190, 184, 184,0.3);
+}
+.news05 p {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+}
+.news05 p:last-of-type {
+    margin-bottom: 5rem;
+}
+.news05 figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news05 figure img {
+    width: 93%;
+    margin-bottom: 2rem;
+}
+.news05 a {
+    color:#2963ad;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+/* botao para voltar ao topo */
+.btn-back {
+    display: flex;  
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0.4rem;
+    
+}
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid rgb(20, 20, 20);
+    background-color: rgb(255, 255, 255);
+    margin-left: 0.3rem;
+}
+.btn a {
+    display: block;
+    padding: 0.6rem;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+    color: #2963ad;
+    font-weight: 600;
+}
+.btn a:hover {
+    background:rgb(224, 222, 222);
+    color: rgb(7, 170, 7);
+}
+/* footer */
+footer{
+    background: rgba(43, 41, 41);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.container-contato{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.container-contato a{
+    border: 3px solid #fff;
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.container-contato a:hover {
+    background: #fff;
+    color: #3c393d;
+}
+.footer-title {
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+    .banner {
+        min-height: 80vh;
+    }
+    .container-navbar img {
+        width: 50%;
+    }
+    .news-tecnologia {
+        padding: 1.3rem;
+    }
+    .btn-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner {
+        min-height: 70vh;
+    }
+    .banner-title {
+        font-size: 4rem;
+    }
+    .banner p {
+        font-size: 1.8rem;
+    }
+    .navbar a {
+        font-size: 0.9rem;
+    }
+    .container-navbar img {
+        width: 40%;
+    }
+    .news-tecnologia {
+        padding: 1rem;
+    }
+    .main-title {
+        font-size: 2.8rem;
+        line-height: 48px;
+    }
+    .btn-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    header {
+        overflow: hidden;
+        width:100%;
+    }
+    body {
+        background: none;
+    }
+    .banner {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 15vw;
+        right: 0;
+        width: 100vw;
+        height: 40vh;
+        background:rgba(0, 0, 0, 0.7);
+        transform: translateX(-100%);
+    }
+    .navbar.active {
+        transform: translateX(0);
+        transition: all .3s ease-in;
+    }
+    .navbar li {
+        color: #fff;
+    }
+    .mobile-menu {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 0.6rem;
+        opacity: 0.7;
+    }
+    .banner-title {
+        font-size: 2.2rem;
+    }
+    .banner p {
+        font-size: 1.3rem;
+    }
+    .news-tecnologia {
+        padding:0.5rem;
+    }
+    .container-news05 {
+        display: block;
+    }
+    .iframe iframe {
+        width: 410px;
+        height: 350px;
+    }
+    .main-title {
+        font-size: 1.8rem;
+        padding: 1rem;
+        line-height: normal;
+        background:rgb(245, 243, 231);
+    }
+    .news05 p:first-of-type {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .news05 p {
+        font-size: 1.1rem;
+        padding: 1rem;
+        margin: auto;
+    }
+    .btn-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    header {
+        overflow: hidden;
+        width:100%;
+    }
+    body {
+        background: none;
+    }
+    .banner {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 16vw;
+        right: 0;
+        width: 100vw;
+        height: 40vh;
+        background:rgba(0, 0, 0, 0.7);
+        transform: translateX(-100%);
+    }
+    .navbar.active {
+        transform: translateX(0);
+        transition: all .3s ease-in;
+    }
+    .navbar li {
+        color: #fff;
+    }
+    .mobile-menu {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 0.6rem;
+        opacity: 0.7;
+    }
+    .banner-title {
+        font-size: 2.2rem;
+    }
+    .banner p {
+        font-size: 1.3rem;
+    }
+    .news-tecnologia {
+        padding:0.5rem;
+    }
+    .container-news05 {
+        display: block;
+    }
+    .iframe iframe {
+        width: 310px;
+        height: 250px;
+    }
+    .main-title {
+        font-size: 1.8rem;
+        padding: 1rem;
+        line-height: normal;
+        background:rgb(245, 243, 231);
+    }
+    .news05 p:first-of-type {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .news05 p {
+        font-size: 1.1rem;
+        padding: 1rem;
+        margin: auto;
+    }
+    .btn-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 320px) {
+    header {
+        overflow: hidden;
+        width:100%;
+    }
+    body {
+        background: none;
+    }
+    .banner {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 17vw;
+        right: 0;
+        width: 100vw;
+        height: 40vh;
+        background:rgba(0, 0, 0, 0.7);
+        transform: translateX(-100%);
+    }
+    .navbar.active {
+        transform: translateX(0);
+        transition: all .3s ease-in;
+    }
+    .navbar li {
+        color: #fff;
+    }
+    .mobile-menu {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 0.6rem;
+        opacity: 0.7;
+    }
+    .banner-title {
+        font-size: 2.2rem;
+    }
+    .banner p {
+        font-size: 1.3rem;
+    }
+    .news-tecnologia {
+        padding:0.5rem;
+    }
+    .container-news05 {
+        display: block;
+    }
+    .iframe iframe {
+        width: 310px;
+        height: 250px;
+    }
+    .main-title {
+        font-size: 1.8rem;
+        padding: 1rem;
+        line-height: normal;
+        background:rgb(245, 243, 231);
+    }
+    .news05 p:first-of-type {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .news05 p {
+        font-size: 1.1rem;
+        padding: 1rem;
+        margin: auto;
+    }
+    .btn-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
