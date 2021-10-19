@@ -327,6 +327,7 @@ strong::after {
         height: 40vh;
         background:rgba(0, 0, 0, 0.7);
         transform: translateX(-100%);
+        z-index: 10;
     }
     .navbar.active {
         transform: translateX(0);
@@ -396,6 +397,7 @@ strong::after {
         height: 40vh;
         background:rgba(0, 0, 0, 0.7);
         transform: translateX(-100%);
+        z-index: 10;
     }
     .navbar.active {
         transform: translateX(0);
@@ -471,6 +473,7 @@ strong::after {
         height: 40vh;
         background:rgba(0, 0, 0, 0.7);
         transform: translateX(-100%);
+        z-index: 10;
     }
     .navbar.active {
         transform: translateX(0);
