@@ -8,6 +8,9 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+main {
+    background-color: white;
+}
 body{
     font-family: 'Ubuntu', sans-serif; 
    color: #f5f5f5;
@@ -129,49 +132,36 @@ strong::after {
     outline: 0;
     cursor: pointer;
 }
-
-/* section noticias */
-.tech-img {
+.news-tecnologia {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 0.8rem;
-    width: 400px;
-    height: 400px;
-}
-.news-tecnologia{
-    background: #fff;
-    padding: 2.5rem;
-} 
-.title {
+    align-items: center;
+    color: rgb(32, 29, 29);
     text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Ubuntu',sans-serif;
-    font-weight: 700;
-    color: #3c393d;
 }
-.title h2 {
-    padding: 1rem 0;
-    margin: 1rem;
-    text-transform: uppercase;
+.title {
+    color:#3c393d;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 120px 0;
 }
-.tech-content{
-    margin: 4rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.title p {
+    margin: 10px;
 }
-.tech-item {
-    cursor: pointer;
-    margin: 2rem 0; /* margem das noticias */
+/* acordion */
+.accordion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    gap: 0.8rem;
 }
-.tech-img {
+.accordion-item{
     position: relative;
-    overflow: hidden;
+    max-width: 400px;
+    margin-bottom: 2rem;
 }
-.tech-item:hover img {
-    transform: scale(1.1);
-}
-.tech-item span:first-of-type {
+.accordion-item span:first-of-type {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -180,44 +170,46 @@ strong::after {
     color: #3c393d;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    padding: 0.8rem 2rem;
+    padding: 0.6rem 1.6rem;
 }
-.tech-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
+.accordion-title{
+    display: block;
+    background: rgb(161, 158, 158); 
+    padding: 20px;
     color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(77, 70, 70);
 }
-.tech-title {
+.panel {
     padding: 1rem;
-    font-size: 1.4rem;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
+    background: rgba(233, 227, 227, 0.8); 
+    display: none;
+    overflow: hidden;
+  }
+.panel a {
+    display: block;
+    color:#2963ad;
+    text-decoration: none;
+    word-wrap: break-word;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
 }
-.tech-title a {
-        display: block;
-        color: #3c393d;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-family: 'Roboto', sans-serif;
+.accordion-title::after {
+    display: flex;
+    justify-content: flex-end;
+    content: 'Clique para ler prévia ⬇️';
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-    .tech-img::after{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        pointer-events: none;
-    }
-    .tech-img img {
-            transition:  all 0.5s ease;
-    }
+.accordion-item img {
+    border-top: 4px solid rgb(0,0,0,0.1);
+}
 
     /* footer */
     footer{
@@ -264,17 +256,8 @@ strong::after {
     .container-navbar img {
         width: 50%;
     }
-    .tech-content{
-        grid-template-columns: repeat(2, 1fr);
-    }
     .container-navbar img {
         width: 40%;
-    }
-    .tech-img {
-        margin: 0;
-        padding: 0;
-        width: 480px;
-        height: 200px;
     }
     .news-tecnologia {
         padding: 1.3rem;
@@ -296,15 +279,6 @@ strong::after {
     }
     .container-navbar img {
         width: 40%;
-    }
-    .tech-content{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .tech-img {
-        margin: 0;
-        padding: 0;
-        width: 360px;
-        height: 200px;
     }
     .news-tecnologia {
         padding: 1rem;
@@ -349,24 +323,12 @@ strong::after {
     .banner p {
         font-size: 1.3rem;
     }
-    .tech-content{
-        grid-template-columns: repeat(1, 1fr);
+    .accordion {
+        margin: 10px 0;
+        padding: 0.1rem;
     }
-    .tech-item {
-        margin: 0;
-    }
-    .tech-img {
-        width: 100%;
-    }
-    .title h2 {
-        font-size: 1.3rem;
-    }
-    .title p {
-        font-size: 1.2rem;
-    }
-    .tech-title {
-        font-size: 1.2rem;
-        width: 100%;
+    .accordion p {
+        padding: 0.4rem;
     }
     .news-tecnologia {
         padding: 0.5rem;
@@ -418,30 +380,15 @@ strong::after {
     .banner p {
         font-size: 1.3rem;
     }
-    .tech-content{
-        grid-template-columns: repeat(1, 1fr);
+    .accordion {
+        margin: 10px 0;
+        padding: 0.3rem;
     }
-    .tech-item {
-        margin: 0;
+    .accordion p {
+        padding: 0.4rem;
     }
-    .tech-img {
-        width: 100%;
-    }
-    .tech-item span:first-of-type {
-        padding:0.3rem 0.2rem;
-    }
-    .tech-img span:last-of-type {
-        font-size: 1rem;
-    }
-    .title h2 {
-        font-size: 1.3rem;
-    }
-    .title p {
-        font-size: 1.2rem;
-    }
-    .tech-title {
-        font-size: 1.2rem;
-        width: 100%;
+    .news-tecnologia {
+        padding:0.5rem;
     }
     .news-tecnologia {
         padding: 0.5rem;
@@ -468,9 +415,9 @@ strong::after {
         top: 17vw;
         right: 0;
         width: 100vw;
-        height: 40vh;
         background:rgba(0, 0, 0, 0.7);
         transform: translateX(-100%);
+        z-index: 10;
     }
     .navbar.active {
         transform: translateX(0);
@@ -493,33 +440,24 @@ strong::after {
     .banner p {
         font-size: 1.3rem;
     }
-    .tech-content{
-    grid-template-columns: repeat(1, 1fr);
-    }
-    .tech-item {
-        margin: 0;
-    }
-    .tech-img {
-      width: 100%;
-    }
-    .tech-item span:first-of-type {
-        padding:0.2rem;
-    }
-    .tech-img span:last-of-type {
-        font-size: 0.9rem;
-    }
-    .title h2 {
-        font-size: 1.3rem;
+    .accordion {
+        margin: 10px 0;
+        padding: 0.3rem;
     }
     .title p {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+        font-weight: 600;
     }
-    .tech-title {
-        font-size: 1.2rem;
-        width: 100%;
+    .accordion p {
+        padding: 0.8rem;
     }
     .news-tecnologia {
         padding:0.5rem;
+    }
+    .title {
+        margin: 1rem 0;
+        padding: 0.4rem;
+        font-size: 1rem;
     }
     body {
         background: none;
