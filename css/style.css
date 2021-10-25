@@ -333,8 +333,20 @@ strong::after {
         margin: 10px 0;
         padding: 0.1rem;
     }
+    .title p {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
     .accordion p {
+        padding: 0.8rem;
+    }
+    .news-tecnologia {
+        padding:0.5rem;
+    }
+    .title {
+        margin: 1rem 0;
         padding: 0.4rem;
+        font-size: 1rem;
     }
     .news-tecnologia {
         padding: 0.5rem;
@@ -391,11 +403,20 @@ strong::after {
         margin: 10px 0;
         padding: 0.3rem;
     }
+    .title p {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
     .accordion p {
-        padding: 0.4rem;
+        padding: 0.8rem;
     }
     .news-tecnologia {
         padding:0.5rem;
+    }
+    .title {
+        margin: 1rem 0;
+        padding: 0.4rem;
+        font-size: 1rem;
     }
     .news-tecnologia {
         padding: 0.5rem;
@@ -408,7 +429,7 @@ strong::after {
     }
 }
         
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     header {
         overflow: hidden;
         width:100%;
