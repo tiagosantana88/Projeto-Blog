@@ -187,7 +187,12 @@ strong::after {
     background: rgba(233, 227, 227, 0.8); 
     display: none;
     overflow: hidden;
-  }
+}
+.panel p {
+    font-size: 16px;
+    font-weight: 500;
+    color:#3c393d;
+}
 .panel a {
     display: block;
     color:#2963ad;
