@@ -12,8 +12,8 @@ main {
     background-color: white;
 }
 body{
-    font-family: 'Ubuntu', sans-serif; 
-   color: #f5f5f5;
+   font-family: 'Ubuntu', sans-serif; 
+   color: #3c393d;
    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner-background.jpg) center/cover no-repeat fixed;
 }
 img {
