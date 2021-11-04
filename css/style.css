@@ -182,6 +182,9 @@ strong::after {
     cursor: pointer;
     border-bottom: 4px solid rgb(77, 70, 70);
 }
+.accordion-item.accordion-expanded > .panel {
+    display: block;
+  }
 .panel {
     padding: 1rem;
     background: rgba(233, 227, 227, 0.8); 
